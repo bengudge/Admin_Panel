@@ -13,10 +13,13 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <!-- Styles -->
+    <link href="/css/app.css" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="{{ mix('css/app.css') }}" /> -->
+    <!-- Scripts -->
+    <script src="/js/app.js" defer></script>
+    <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
+
 </head>
 <!-- <body class="bg-dark text-white"> -->
 <body>
