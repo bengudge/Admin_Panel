@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bg-dark text-light">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+            <div class="card bg-dark text-light border-dark">
+                <div class="card-header border-dark">{{ __('Dashboard') }}</div>
 
                 <div class="card-body ">
                     @if (session('status'))
@@ -37,25 +37,25 @@
             @if (auth()->user()->is_admin)
                 <p class="my-4 text-center text-light">Welcome, admin!</p>
 
-                <div class="card container mt-4 bg-dark text-light">                        
+                <div class="card container mt-4 bg-dark text-light border-0">                        
                     <form method="POST" action="{{ route('companies.store') }}" enctype="multipart/form-data">
                         @csrf
                         <p class="fw-bold text-center h4 mt-2">Company Form</p>
-                        <div class="form-group my-2 ">
+                        <div class="form-group my-2">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name" class="form-control text-light border-dark" required>
+                            <input type="text" name="name" id="name" class="form-control text-light border-0" required>
                         </div>
                         <div class="form-group my-2">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control text-light border-dark" required>
+                            <input type="email" name="email" id="email" class="form-control text-light border-0" required>
                         </div>
                         <div class="form-group my-2">
                             <label for="logo">Logo:</label>
-                            <input type="file" name="logo" id="logo" class="form-control text-light border-dark" required>
+                            <input type="file" name="logo" id="logo" class="form-control text-light border-0" required>
                         </div>
                         <div class="form-group my-2">
                             <label for="website">Website:</label>
-                            <input type="url" name="website" id="website" class="form-control text-light border-dark" required>
+                            <input type="url" name="website" id="website" class="form-control text-light border-0" required>
                         </div>
                         <button type="submit" class="btn btn-primary my-3 btn-light">Add Company</button>
                     </form>
@@ -63,7 +63,7 @@
 
                 
 
-                <div class="card container mt-4 bg-dark text-light">                        
+                <div class="card container mt-4 bg-dark text-light border-0">                        
                     <form method="POST" action="{{ route('employees.store') }}" enctype="multipart/form-data">
                         @csrf
                         <p class="fw-bold text-center h4 mt-2">Employee Form</p>
